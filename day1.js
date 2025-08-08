@@ -1,5 +1,4 @@
 import fs from 'fs'
-import { argv0 } from 'process'
 
 const arrOne = []
 const arrTwo = []
@@ -27,7 +26,6 @@ fs.readFile('ques.txt', 'utf8', (err, data) => {
 
   for (let i = 0; i < arrOne.length; i++) {
     let difference = Math.abs(arrOne[i] - arrTwo[i])
-    console.log('difference', difference)
     finalAnswer = finalAnswer + difference
   }
   console.log('Ans -> ', finalAnswer)
